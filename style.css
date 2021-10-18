@@ -1,0 +1,107 @@
+body{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+    margin: 0;
+    background-color: rgb(248, 203, 183);
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr ;
+    row-gap: 30px;
+    background-color: rgb(245, 167, 133);
+        margin-top: 0;
+        padding: 20px;
+}
+
+nav h2{
+    margin: auto;
+    color: rgb(172, 168, 168);
+}
+
+.cauta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cauta button{
+    color: white;
+    background-color: rgb(248, 85, 15);
+    border-radius: 5px;
+}
+
+.caini{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 40px;
+    
+}
+
+.caine{
+    
+    background-color: rgb(252, 249, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+     max-width: 350px; 
+     box-shadow: 1px 1px 3px black;
+     border-radius: 10px;
+}
+
+.caine hr{
+    width: 60%;
+}
+
+.caine h3{
+    font-size: 25px;
+    color:rgb(83, 25, 0);
+}
+
+.butoane{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buton{
+    background-color: rgb(248, 85, 15);
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border: solid 1px black;
+}
+
+@media(min-width:720px){
+    .caini{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(245, 167, 133);
+        margin-top: 0;
+        padding: 20px;
+    }
+}
+
+@media(min-width:901px){
+    .caini{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
